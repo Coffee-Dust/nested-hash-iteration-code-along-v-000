@@ -20,8 +20,8 @@ def remove_strawberry(contacts)
     details.each do |name, value|
       if name == :favorite_ice_cream_flavors
         value.each_with_index { |flavor, i|
-          if flavor == "strawberry" 
-            value[i].pop()
+          if flavor == "strawberry"
+            value.delete_at(i)
 
         }
       end
