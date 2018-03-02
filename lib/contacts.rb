@@ -22,7 +22,7 @@ def remove_strawberry(contacts)
         value.each_with_index { |flavor, i|
           if flavor == "strawberry"
             value.delete_at(i)
-
+          end
         }
       end
     end
